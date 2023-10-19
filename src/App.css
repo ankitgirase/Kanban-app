@@ -77,7 +77,7 @@
   .popup.open {
     display: block;
     margin-left: 50px;
-    margin-top: 0px; /* Add some margin to separate it from the button */
+    margin-top: 0px;
   }
   
   .popup button {
@@ -106,5 +106,5 @@
 
   
   
-  /* Style the rest of your component as needed */
+
   
