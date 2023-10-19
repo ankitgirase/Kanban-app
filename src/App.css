@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stacks{
+    display: flex;
+    /* flex-direction: ; */
+    gap: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.display{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+    border: 0.5px solid rgb(216, 216, 216);
+    padding: 3px;
+    border-radius: 5px;
+    width: 95px;
+    min-width: 50px;
+}
+
+.display:hover{
+    cursor: pointer;
+}
+.display span{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-bottom: 20px; */
+}
+
+.main-content{
+    margin-left: 40px;
+    /* margin-top: 35px; */
+}
+
+.container {
+    position: relative;
+    display: inline-block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 260px;
+    height: 90px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
   }
-}
+
+  
+  .popup.open {
+    display: block;
+    margin-left: 50px;
+    margin-top: 0px; /* Add some margin to separate it from the button */
+  }
+  
+  .popup button {
+    margin: 10px 0;
+  }
+  
+  .box{
+    max-width: 80%;
+    padding: 15px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    color: #afafaf;
+  }
+
+  .dropdown{
+    font-weight: bold;
+    width: 2.5rem;
+  }
+
+  
+  
+  /* Style the rest of your component as needed */
+  
